@@ -1,0 +1,112 @@
+/* =====================================================================
+   services.css — CSS riêng cho trang "Dịch vụ"
+   Dùng CHUNG với style.css: font chữ, --ink/--muted/--cream, hệ thống
+   .reveal (motion khi cuộn), hiệu ứng chuyển trang (body.leaving), .ph
+   (ảnh giữ chỗ) và .wrap. File này chỉ thêm phần riêng cho nội dung
+   trang Dịch vụ, không sửa lại style.css / header / footer.
+   ===================================================================== */
+
+/* Màu chủ đạo riêng cho trang này theo yêu cầu thiết kế (#5a8231) */
+:root{
+ --svc-primary:#5a8231;
+ --svc-primary-dark:#456726;
+ --svc-primary-soft:#eef3e2;
+}
+
+/* Nhãn nhỏ dạng pill, dùng lại nhiều nơi trong trang */
+.eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.06em;
+ text-transform:uppercase;color:var(--svc-primary-dark);background:var(--svc-primary-soft);
+ padding:6px 14px;border-radius:999px;margin-bottom:14px}
+
+/* Nút CTA riêng của trang: cùng hình dạng viên thuốc với .btn ở style.css,
+   nhưng đúng màu chủ đạo #5a8231 mà yêu cầu thiết kế đưa ra */
+.svc-btn{display:inline-block;background:var(--svc-primary);color:#fff;font-weight:600;
+ font-size:15px;padding:12px 28px;border-radius:999px;border:2px solid var(--svc-primary);
+ transition:background .2s ease,color .2s ease,transform .2s ease,box-shadow .2s ease}
+.svc-btn:hover{background:var(--svc-primary-dark);border-color:var(--svc-primary-dark);
+ transform:translateY(-2px);box-shadow:0 10px 20px rgba(90,130,49,.25)}
+.svc-btn.outline{background:transparent;color:var(--svc-primary)}
+.svc-btn.outline:hover{background:var(--svc-primary);color:#fff}
+
+/* ===================== HERO ===================== */
+.svc-hero{padding:64px 0 20px}
+.svc-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.svc-hero-text h1{font-size:clamp(30px,4.4vw,46px);line-height:1.18;color:var(--ink);
+ font-weight:800;margin-bottom:16px}
+.svc-hero-text p{max-width:480px;color:var(--muted);margin-bottom:30px}
+.svc-hero-cta{display:flex;gap:16px;flex-wrap:wrap}
+.svc-hero-illus{height:340px;border-radius:28px}
+
+/* ================= DUAL SOLUTIONS ================= */
+.svc-dual{padding:74px 0}
+.svc-section-head{text-align:center;max-width:620px;margin:0 auto 44px}
+.svc-section-head h2{color:var(--green);margin:0}
+.svc-dual-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.svc-card{background:#fff;border:1px solid #e7ebdd;border-radius:22px;padding:34px 30px;
+ box-shadow:0 4px 18px rgba(31,93,61,.06);
+ transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease}
+.svc-card:hover{transform:translateY(-8px);box-shadow:0 20px 34px rgba(31,93,61,.14);
+ border-color:var(--svc-primary)}
+.svc-card-icon{width:56px;height:56px;border-radius:16px;background:var(--svc-primary-soft);
+ color:var(--svc-primary-dark);display:grid;place-items:center;margin-bottom:18px;
+ transition:background .3s ease,color .3s ease}
+.svc-card-icon svg{width:28px;height:28px}
+.svc-card:hover .svc-card-icon{background:var(--svc-primary);color:#fff}
+.svc-card h3{font-size:21px;color:var(--ink);margin-bottom:10px}
+.svc-card>p{color:var(--muted);font-size:14.5px;margin-bottom:20px}
+.svc-list{list-style:none;margin-bottom:24px}
+.svc-list li{position:relative;padding-left:26px;font-size:14.5px;color:var(--ink);margin-bottom:11px}
+.svc-list li::before{content:"";position:absolute;left:0;top:6px;width:14px;height:14px;
+ border-radius:50%;background:var(--svc-primary-soft);box-shadow:inset 0 0 0 4px var(--svc-primary)}
+.svc-card-link{display:inline-block;font-weight:700;font-size:14px;color:var(--svc-primary-dark)}
+.svc-card-link:hover{text-decoration:underline}
+
+/* ================= HOW IT WORKS ================= */
+.svc-steps{padding:70px 0 86px}
+.svc-steps-row{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.svc-steps-line{position:absolute;left:12.5%;right:12.5%;top:32px;height:2px;background:#dfe6d3;z-index:0}
+.svc-steps-line-fill{display:block;height:100%;width:0;background:var(--svc-primary);transition:width 1.1s ease}
+.svc-steps-line-fill.in{width:100%}
+.svc-step{position:relative;z-index:1;text-align:center}
+.svc-step-dot{width:64px;height:64px;border-radius:50%;background:#fff;border:2px solid var(--svc-primary);
+ color:var(--svc-primary-dark);display:grid;place-items:center;margin:0 auto 16px;
+ box-shadow:0 4px 14px rgba(90,130,49,.18)}
+.svc-step-dot svg{width:28px;height:28px}
+.svc-step .step-no{display:block;font-size:12px;font-weight:700;letter-spacing:.06em;
+ color:var(--svc-primary-dark);margin-bottom:6px;text-transform:uppercase}
+.svc-step h4{font-size:16.5px;color:var(--ink);margin-bottom:6px}
+.svc-step p{font-size:13.5px;color:var(--muted)}
+
+/* ===================== STATS ===================== */
+.svc-stats{position:relative;background:var(--svc-primary);color:#fff;padding:88px 0 64px;overflow:hidden}
+.svc-stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:center}
+.svc-stat-num{display:block;font-size:clamp(32px,4.6vw,44px);font-weight:800;font-variant-numeric:tabular-nums}
+.svc-stat-label{font-size:14px;color:rgba(255,255,255,.85);margin-top:4px}
+
+/* ===================== RESPONSIVE ===================== */
+@media(max-width:900px){
+ .svc-hero-grid{grid-template-columns:1fr;text-align:center}
+ .svc-hero-text p{margin-left:auto;margin-right:auto}
+ .svc-hero-cta{justify-content:center}
+ .svc-hero-illus{height:260px;order:-1}
+
+ .svc-dual-grid{grid-template-columns:1fr}
+
+ .svc-steps-row{grid-template-columns:1fr;gap:0}
+ .svc-steps-line{display:none}
+ .svc-step{text-align:left;padding:0 0 32px 64px}
+ .svc-step-dot{position:absolute;left:0;top:0;margin:0}
+ .svc-step:not(:last-child)::after{content:"";position:absolute;left:31px;top:64px;bottom:0;
+  width:2px;background:#dfe6d3}
+
+ .svc-stats-grid{grid-template-columns:1fr;gap:36px}
+}
+@media(max-width:560px){
+ .svc-hero-cta{flex-direction:column;align-items:stretch}
+ .svc-hero-cta .svc-btn{text-align:center}
+}
+@media(prefers-reduced-motion:reduce){
+ .svc-steps-line-fill{transition:none}
+ .svc-card{transition:none}
+ .svc-btn{transition:none}
+}

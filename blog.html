@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bài viết - Kireio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Dùng chung nền tảng giao diện với các trang trước -->
+<link rel="stylesheet" href="style.css">
+<!-- Riêng cho nội dung trang Bài viết -->
+<link rel="stylesheet" href="blog.css">
+</head>
+<body>
+
+<!-- HEADER (giống hệt các trang trước) -->
+<header>
+ <div class="wrap bar">
+  <a href="index.html" class="logo" aria-label="Kireio">
+   <img src="D:\Kireio\images\logo.jpg" alt="Logo Kireio" style="height: 48px; width: auto; object-fit: contain;">Kireio
+  </a>
+  <button class="burger" id="burger" aria-label="Mở menu" aria-expanded="false">☰</button>
+  <nav id="nav" aria-label="Menu chính">
+   <ul>
+ <li><a href="index.html" class="active">Trang chủ</a></li>
+    <li><a href="about.html">Về chúng tôi</a></li>
+    <li><a href="services.html">Dịch vụ</a></li>
+    <li><a href="blog.html">Bài viết</a></li>
+    <li><a href="explore.html">Tìm việc</a></li>
+   </ul>
+  </nav>
+  <a href="contact.html" class="btn">Liên hệ chúng tôi</a>
+ </div>
+</header>
+
+<main>
+
+<!-- 1. FEATURED POST -->
+<section class="blog-featured">
+ <div class="wrap">
+  <article class="blog-featured-card reveal">
+   <!-- Thay bằng ảnh bài viết nổi bật thật -->
+   <a href="xu-huong-nhan-su-nganh-ve-sinh-2026.html" class="blog-featured-media" aria-label="Xu hướng nhân sự ngành vệ sinh 2026"><img src="D:\Kireio\images\xuhuongnhansu.jpg" alt="Xu hướng nhân sự ngành vệ sinh 2026" style="width: 100%; height: 100%; object-fit: cover; border-radius: 24px 0 0 24px;"></a>
+   <div class="blog-featured-body">
+    <span class="blog-badge">Bài viết nổi bật</span>
+    <span class="blog-tag">Tin tức</span>
+    <h2>Xu hướng nhân sự ngành vệ sinh 2026</h2>
+    <p>
+     Nhìn lại một năm chuyển mình của thị trường lao động ngành vệ sinh, từ nhu cầu
+     tuyển dụng linh hoạt đến sự lên ngôi của các nền tảng kết nối như Kireio.
+    </p>
+    <div class="blog-featured-meta">
+     <span>Đội ngũ Kireio</span><span class="dot"></span><span>28/09/2026</span><span class="dot"></span><span>6 phút đọc</span>
+    </div>
+    <a href="xu-huong-nhan-su-nganh-ve-sinh-2026.html" class="blog-btn">Đọc ngay</a>
+   </div>
+  </article>
+ </div>
+</section>
+
+<!-- 2. CATEGORY FILTER -->
+<section class="blog-filter">
+ <div class="wrap">
+  <div class="blog-pills reveal" role="group" aria-label="Lọc bài viết theo chuyên mục">
+   <button type="button" class="blog-pill active" data-filter="all" aria-pressed="true">Tất cả</button>
+   <button type="button" class="blog-pill" data-filter="ky-nang" aria-pressed="false">Kỹ năng nghề nghiệp</button>
+   <button type="button" class="blog-pill" data-filter="quan-tri" aria-pressed="false">Quản trị nhân sự</button>
+   <button type="button" class="blog-pill" data-filter="tin-tuc" aria-pressed="false">Tin tức</button>
+  </div>
+ </div>
+</section>
+
+<!-- 3. ARTICLE GRID -->
+<section class="blog-grid-section">
+ <div class="wrap">
+  <div class="blog-grid" id="blogGrid">
+
+   <article class="article-card reveal" data-category="ky-nang">
+    <a href="5-ky-nang-cong-tac-vien-ghi-diem.html" class="article-card-media"><img src="D:\Kireio\images\5skills.jpg" alt="5 kĩ năng" style="width: 100%; height: 100%; object-fit: cover; border-radius: 24px 24px 2
+    px 24px;"></a>
+    <div class="article-card-body">
+     <div class="article-card-top">
+      <span class="blog-tag">Kỹ năng nghề nghiệp</span>
+      <time class="article-card-date">02/09/2026</time>
+     </div>
+     <h3><a href="5-ky-nang-cong-tac-vien-ghi-diem.html">5 kỹ năng giúp cộng tác viên vệ sinh ghi điểm với khách hàng</a></h3>
+     <p class="article-card-excerpt">Từ cách sắp xếp thời gian đến kỹ năng giao tiếp cơ bản, đây là những điều nhỏ tạo nên sự khác biệt lớn trong công việc vệ sinh.</p>
+     <a href="5-ky-nang-cong-tac-vien-ghi-diem.html" class="article-card-link">Xem thêm <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+   </article>
+
+   <article class="article-card reveal d1" data-category="quan-tri">
+    <a href="quan-ly-doi-ngu-ve-sinh-part-time.html" class="article-card-media"><img src="D:\Kireio\images\quanly.jpg" alt="Quản lý" style="width: 100%; height: 100%; object-fit: cover; border-radius: 24px 24px 2
+    px 24px;"></a>
+    <div class="article-card-body">
+     <div class="article-card-top">
+      <span class="blog-tag">Quản trị nhân sự</span>
+      <time class="article-card-date">28/08/2026</time>
+     </div>
+     <h3><a href="quan-ly-doi-ngu-ve-sinh-part-time.html">Làm sao để quản lý đội ngũ vệ sinh part-time hiệu quả</a></h3>
+     <p class="article-card-excerpt">Gợi ý quy trình sắp lịch, đối soát công việc và giữ chân nhân sự part-time cho các doanh nghiệp vệ sinh vừa và nhỏ.</p>
+     <a href="quan-ly-doi-ngu-ve-sinh-part-time.html" class="article-card-link">Xem thêm <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+   </article>
+
+   <article class="article-card reveal d2" data-category="tin-tuc">
+    <a href="kireio-mo-rong-5-tinh-thanh.html" class="article-card-media"><img src="D:\Kireio\images\morong.jpg" alt="Mở rộng" style="width: 100%; height: 100%; object-fit: cover; border-radius: 24px 24px 2
+    px 24px;"></a>
+    <div class="article-card-body">
+     <div class="article-card-top">
+      <span class="blog-tag">Tin tức</span>
+      <time class="article-card-date">15/08/2026</time>
+     </div>
+     <h3><a href="kireio-mo-rong-5-tinh-thanh.html">Kireio chính thức mở rộng hoạt động ra 5 tỉnh thành mới</a></h3>
+     <p class="article-card-excerpt">Cột mốc mới trong hành trình kết nối dịch vụ vệ sinh thông minh, mang cơ hội việc làm đến gần hơn với nhiều địa phương.</p>
+     <a href="kireio-mo-rong-5-tinh-thanh.html" class="article-card-link">Xem thêm <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+   </article>
+
+   <article class="article-card reveal" data-category="ky-nang">
+    <a href="huong-dan-hoa-chat-tay-rua-an-toan.html" class="article-card-media"><img src="D:\Kireio\images\hdsd.jpg" alt="Hướng dẫn sử dụng" style="width: 100%; height: 100%; object-fit: cover; border-radius: 24px 24px 2
+    px 24px;"></a>
+    <div class="article-card-body">
+     <div class="article-card-top">
+      <span class="blog-tag">Kỹ năng nghề nghiệp</span>
+      <time class="article-card-date">03/08/2026</time>
+     </div>
+     <h3><a href="huong-dan-hoa-chat-tay-rua-an-toan.html">Hướng dẫn sử dụng hoá chất tẩy rửa an toàn tại nhà</a></h3>
+     <p class="article-card-excerpt">Những nguyên tắc cơ bản giúp cộng tác viên và khách hàng tránh rủi ro khi làm việc với hoá chất vệ sinh phổ biến.</p>
+     <a href="huong-dan-hoa-chat-tay-rua-an-toan.html" class="article-card-link">Xem thêm <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+   </article>
+
+   <article class="article-card reveal d1" data-category="quan-tri">
+    <a href="he-thong-danh-gia-minh-bach-cho-ctv.html" class="article-card-media"><img src="D:\Kireio\images\xdunghethogndanhgia.jpg" alt="Xây dựng hệ thống đánh giá" style="width: 100%; height: 100%; object-fit: cover; border-radius: 24px 24px 2
+    px 24px;"></a>
+    <div class="article-card-body">
+     <div class="article-card-top">
+      <span class="blog-tag">Quản trị nhân sự</span>
+      <time class="article-card-date">21/07/2026</time>
+     </div>
+     <h3><a href="he-thong-danh-gia-minh-bach-cho-ctv.html">Xây dựng hệ thống đánh giá minh bạch cho cộng tác viên</a></h3>
+     <p class="article-card-excerpt">Vì sao đánh giá hai chiều là chìa khoá giúp doanh nghiệp vệ sinh giữ chân nhân sự giỏi và nâng cao chất lượng dịch vụ.</p>
+     <a href="he-thong-danh-gia-minh-bach-cho-ctv.html" class="article-card-link">Xem thêm <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+   </article>
+
+   <article class="article-card reveal d2" data-category="tin-tuc">
+    <a href="bao-cao-thi-truong-lao-dong-ve-sinh-q2-2026.html" class="article-card-media"><img src="D:\Kireio\images\baocao.jpg" alt="Báo cáo" style="width: 100%; height: 100%; object-fit: cover; border-radius: 24px 24px 2
+    px 24px;"></a>
+    <div class="article-card-body">
+     <div class="article-card-top">
+      <span class="blog-tag">Tin tức</span>
+      <time class="article-card-date">05/07/2026</time>
+     </div>
+     <h3><a href="bao-cao-thi-truong-lao-dong-ve-sinh-q2-2026.html">Báo cáo thị trường lao động vệ sinh quý II/2026</a></h3>
+     <p class="article-card-excerpt">Tổng hợp số liệu và xu hướng nổi bật về nguồn cung - cầu nhân sự ngành vệ sinh trong quý vừa qua.</p>
+     <a href="bao-cao-thi-truong-lao-dong-ve-sinh-q2-2026.html" class="article-card-link">Xem thêm <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+   </article>
+
+  </div>
+
+  <!-- 4. PAGINATION -->
+  <nav class="blog-pagination reveal" aria-label="Điều hướng trang bài viết">
+   <button type="button" class="blog-page-btn" data-page="prev" aria-label="Trang trước" disabled>←</button>
+   <button type="button" class="blog-page-btn active" data-page="1" aria-current="page">1</button>
+   <button type="button" class="blog-page-btn" data-page="2">2</button>
+   <button type="button" class="blog-page-btn" data-page="3">3</button>
+   <button type="button" class="blog-page-btn" data-page="next" aria-label="Trang sau">→</button>
+  </nav>
+ </div>
+</section>
+
+<!-- 5. NEWSLETTER -->
+<section class="blog-newsletter">
+ <div class="wrap">
+  <div class="blog-newsletter-box reveal">
+   <h2>Đừng bỏ lỡ bài viết mới</h2>
+   <p>Đăng ký để nhận những bài viết, kinh nghiệm và tin tức mới nhất từ Kireio ngay trong hộp thư của bạn.</p>
+   <form class="blog-newsletter-form" id="newsletterForm" novalidate>
+    <label for="newsletterEmail" class="sr-only">Email</label>
+    <input id="newsletterEmail" type="email" name="email" placeholder="Nhập email của bạn..." required>
+    <button type="submit" class="blog-btn">Đăng ký</button>
+   </form>
+   <p class="blog-newsletter-msg" id="newsletterMsg" role="status" aria-live="polite"></p>
+  </div>
+ </div>
+</section>
+
+</main>
+
+<!-- FOOTER (giống hệt các trang trước) -->
+<footer id="contact">
+ <div class="wrap">
+  <div class="f-top">
+   <div><h4>Menu</h4><ul>
+    <li><a href="index.html">Trang chủ</a></li><li><a href="about.html">Về chúng tôi</a></li><li><a href="services.html">Dịch vụ</a></li><li><a href="blog.html">Bài viết</a></li></ul></div>
+   <div><h4>Chính sách</h4>
+        <ul>
+          <li><a href="privacy.html">Chính sách bảo mật</a></li>
+          <li><a href="terms.html">Điều khoản sử dụng</a></li>
+          <li><a href="refund.html">Chính sách hoàn tiền</a></li>
+          <li><a href="cookie.html">Chính sách cookie</a></li>
+        </ul></div>
+   <div><h4>Liên hệ</h4><ul>
+    <li><a href="mailto:support@kireio.vn">support@kireio.vn</a></li><li><a href="tel:+84123456789">+84 123 456 789</a></li><li><a href="#">Facebook / Zalo</a></li></ul></div>
+  </div>
+  <div class="f-bot">
+   <p>Kireio HQ, [Địa chỉ của bạn], TP. Hồ Chí Minh, Việt Nam.</p>
+   <p>© <span id="year">2026</span> Kireio. All rights reserved.</p>
+  </div>
+  <div class="brand-big" aria-hidden="true">Kireio</div>
+ </div>
+</footer>
+
+<!-- Dùng chung script.js (menu, active nav, reveal, đếm số) -->
+<script src="script.js"></script>
+<!-- Riêng cho trang Bài viết (lọc chuyên mục, phân trang, form đăng ký) -->
+<script src="blog.js"></script>
+</body>
+</html>

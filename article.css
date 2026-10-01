@@ -1,0 +1,117 @@
+/* =====================================================================
+   article.css — CSS dùng CHUNG cho mọi trang bài viết chi tiết của Kireio
+   Load cùng: style.css (nền tảng + .reveal + .wrap) và blog.css (màu
+   --blog-primary, .blog-tag, .blog-btn, .blog-grid/.article-card dùng
+   lại cho khối "Bài viết liên quan", .blog-newsletter dùng lại ở cuối
+   trang). File này không sửa style.css / blog.css / header / footer.
+   ===================================================================== */
+
+/* ---------- Breadcrumb ---------- */
+.article-breadcrumb{padding:20px 0 4px;font-size:13px;color:var(--muted)}
+.article-breadcrumb a{color:var(--muted)}
+.article-breadcrumb a:hover{color:var(--blog-primary-dark)}
+.article-breadcrumb .sep{margin:0 6px;color:#c7cdb9}
+.article-breadcrumb .cur{color:var(--ink);font-weight:600}
+
+.article-back{display:inline-flex;align-items:center;gap:6px;font-size:13.5px;font-weight:700;
+ color:var(--blog-primary-dark);margin:14px 0 2px}
+.article-back svg{width:15px;height:15px}
+
+/* ---------- Hero bài viết ---------- */
+.article-hero{padding:6px 0 36px}
+.article-hero h1{font-size:clamp(26px,4vw,40px);color:var(--ink);font-weight:800;line-height:1.22;
+ margin:14px 0 16px;max-width:880px}
+.article-hero-meta{display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-size:13.5px;
+ color:var(--muted);margin-bottom:26px}
+.article-hero-meta .dot{width:4px;height:4px;border-radius:50%;background:#c6cebb}
+
+/* Ảnh minh hoạ: placeholder gradient + icon sinh động theo chủ đề,
+   thay bằng ảnh thật khi có — xem chú thích trong HTML */
+.article-hero-media{position:relative;border-radius:26px;overflow:hidden;height:380px;
+ display:flex;align-items:center;justify-content:center;color:#fff;
+ background:linear-gradient(135deg,var(--blog-primary) 0%,#30471c 100%)}
+.article-hero-media::before{content:"";position:absolute;inset:0;
+ background:radial-gradient(circle at 18% 22%,rgba(255,255,255,.22),transparent 45%),
+ radial-gradient(circle at 82% 78%,rgba(255,255,255,.14),transparent 42%)}
+.article-hero-media svg{position:relative;width:100px;height:100px;opacity:.92}
+.article-hero-media .cap{position:absolute;bottom:14px;left:0;right:0;text-align:center;
+ font-size:12px;color:rgba(255,255,255,.78)}
+
+/* ---------- Bố cục nội dung + mục lục ---------- */
+.article-body-wrap{display:grid;grid-template-columns:1fr 280px;gap:48px;padding:12px 0 60px;
+ align-items:start}
+
+.article-prose{max-width:720px;color:#3c473d}
+.article-prose h2{font-size:23px;color:var(--ink);font-weight:800;margin:38px 0 14px;scroll-margin-top:100px}
+.article-prose h3{font-size:17.5px;color:var(--ink);font-weight:700;margin:24px 0 10px}
+.article-prose p{font-size:15.5px;line-height:1.85;margin-bottom:18px}
+.article-prose ul,.article-prose ol{margin:0 0 18px 1.15em;font-size:15.5px;line-height:1.85}
+.article-prose li{margin-bottom:8px}
+.article-prose strong{color:var(--ink)}
+.article-prose blockquote{border-left:4px solid var(--blog-primary);background:var(--blog-primary-soft);
+ padding:18px 22px;border-radius:0 16px 16px 0;color:var(--ink);font-weight:600;font-style:italic;
+ margin:28px 0}
+
+.article-tags{display:flex;flex-wrap:wrap;gap:8px;margin:28px 0 8px}
+.article-tags a{font-size:12.5px;font-weight:600;color:var(--blog-primary-dark);
+ background:var(--blog-primary-soft);padding:6px 13px;border-radius:999px}
+.article-tags a:hover{background:var(--blog-primary);color:#fff}
+
+.article-share{display:flex;align-items:center;flex-wrap:wrap;gap:12px;padding:22px 0;
+ border-top:1px solid #e7ebdd;border-bottom:1px solid #e7ebdd;margin:26px 0}
+.article-share>span{font-size:13.5px;font-weight:700;color:var(--ink)}
+.article-share-links{display:flex;gap:8px}
+.article-share-links a,.article-share-links button{width:36px;height:36px;border-radius:50%;
+ border:1px solid #dfe6d3;background:#fff;display:grid;place-items:center;cursor:pointer;
+ color:var(--ink);font:inherit;transition:background .2s ease,color .2s ease,border-color .2s ease}
+.article-share-links a:hover,.article-share-links button:hover{background:var(--blog-primary);
+ border-color:var(--blog-primary);color:#fff}
+.article-share-links button.copied{background:var(--blog-primary);border-color:var(--blog-primary);color:#fff}
+.article-share-links svg{width:16px;height:16px}
+
+.article-author{display:flex;gap:14px;align-items:center;background:#fff;border-radius:18px;
+ padding:20px;box-shadow:0 4px 16px rgba(31,93,61,.06);margin:26px 0 10px}
+.article-author-avatar{width:50px;height:50px;border-radius:50%;background:var(--blog-primary-soft);
+ color:var(--blog-primary-dark);display:grid;place-items:center;font-weight:800;font-size:16px;flex:0 0 auto}
+.article-author h4{font-size:14.5px;color:var(--ink);margin-bottom:2px}
+.article-author p{font-size:13px;color:var(--muted);margin:0}
+
+/* ---------- Sidebar: mục lục + CTA ---------- */
+.article-sidebar{position:sticky;top:96px}
+.article-toc{background:#fff;border-radius:18px;padding:22px;box-shadow:0 4px 16px rgba(31,93,61,.06);
+ margin-bottom:20px}
+.article-toc h4{font-size:12.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);
+ margin-bottom:12px}
+.article-toc ul{list-style:none}
+.article-toc li{margin-bottom:8px}
+.article-toc a{font-size:13.5px;color:var(--ink);display:block;padding:4px 0 4px 12px;
+ border-left:2px solid #e7ebdd;transition:color .2s ease,border-color .2s ease}
+.article-toc a:hover,.article-toc a.active{color:var(--blog-primary-dark);border-color:var(--blog-primary)}
+
+.article-sidebar-cta{background:var(--blog-primary);color:#fff;border-radius:18px;padding:24px;
+ text-align:center}
+.article-sidebar-cta h4{font-size:15.5px;margin-bottom:8px}
+.article-sidebar-cta p{font-size:13px;color:rgba(255,255,255,.85);margin-bottom:14px}
+.article-sidebar-cta .blog-btn{width:100%;justify-content:center}
+
+/* ---------- Thanh tiến trình đọc ---------- */
+.article-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:var(--blog-primary);
+ z-index:50}
+
+/* ---------- Bài viết liên quan ---------- */
+.article-related{padding:6px 0 70px}
+.article-related h2{font-size:22px;color:var(--green);font-weight:800;margin-bottom:26px;text-align:center}
+
+/* ---------- Responsive ---------- */
+@media(max-width:980px){
+ .article-body-wrap{grid-template-columns:1fr}
+ .article-sidebar{display:none}
+}
+@media(max-width:700px){
+ .article-hero-media{height:240px}
+ .article-hero-media svg{width:72px;height:72px}
+}
+@media(prefers-reduced-motion:reduce){
+ .article-progress{transition:none}
+ .article-toc a,.article-share-links a,.article-share-links button{transition:none}
+}

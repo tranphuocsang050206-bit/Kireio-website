@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Đăng ký tài khoản - Kireio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+<!-- HEADER: dùng lại cấu trúc chung của Kireio -->
+<header>
+  <div class="wrap bar">
+    <a href="index.html" class="logo" aria-label="Kireio">
+      <img src="D:\Kireio\images\logo.jpg" alt="Logo Kireio" style="height: 48px; width: auto; object-fit: contain;">Kireio
+    </a>
+
+    <button class="burger" id="burger" aria-label="Mở menu" aria-expanded="false">☰</button>
+
+    <nav id="nav" aria-label="Menu chính">
+      <ul>
+      <li><a href="index.html" class="active">Trang chủ</a></li>
+    <li><a href="about.html">Về chúng tôi</a></li>
+    <li><a href="services.html">Dịch vụ</a></li>
+    <li><a href="blog.html">Bài viết</a></li>
+    <li><a href="explore.html">Tìm việc</a></li>
+      </ul>
+    </nav>
+
+    <a href="contact.html" class="btn">Liên hệ chúng tôi</a>
+  </div>
+</header>
+
+<main class="register-page">
+  <section class="register-section" aria-labelledby="registerTitle">
+    <div class="register-card max-w-md w-full bg-white rounded-2xl shadow-xl">
+      <div class="register-header">
+        <span class="register-eyebrow">Tạo tài khoản</span>
+        <h1 id="registerTitle">Đăng ký tài khoản Kireio</h1>
+        <p>Tham gia nền tảng kết nối dịch vụ vệ sinh hàng đầu</p>
+      </div>
+
+      <form id="registerForm" class="register-form" method="post" action="/api/register" novalidate>
+        <fieldset class="role-fieldset">
+          <legend class="sr-only">Loại tài khoản</legend>
+
+          <label class="role-option is-active" for="roleUser">
+            <input id="roleUser" type="radio" name="role_tai_khoan" value="user" checked>
+            <span>Người dùng</span>
+          </label>
+
+          <label class="role-option" for="roleBusiness">
+            <input id="roleBusiness" type="radio" name="role_tai_khoan" value="business">
+            <span>Doanh nghiệp</span>
+          </label>
+        </fieldset>
+
+        <div class="register-field">
+          <label for="emailInput">Email đăng nhập</label>
+          <input
+            id="emailInput"
+            name="email_dang_nhap"
+            type="email"
+            autocomplete="email"
+            placeholder="ban@vidu.com"
+            required
+          >
+        </div>
+
+        <div class="register-field">
+          <label for="nameInput" id="nameFieldLabel">Họ và tên</label>
+          <input
+            id="nameInput"
+            name="ten_dang_ky"
+            type="text"
+            autocomplete="name"
+            placeholder="Nguyễn Văn A"
+            required
+          >
+        </div>
+
+        <div class="register-field">
+          <label for="passwordInput">Mật khẩu</label>
+          <div class="password-wrap">
+            <input
+              id="passwordInput"
+              name="mat_khau"
+              type="password"
+              autocomplete="new-password"
+              placeholder="Tối thiểu 8 ký tự"
+              minlength="8"
+              required
+            >
+            <button type="button" class="password-toggle" id="passwordToggle" aria-label="Hiện mật khẩu">Hiện</button>
+          </div>
+        </div>
+
+        <button type="submit" class="register-submit w-full" id="registerSubmit">Đăng ký ngay</button>
+        <p class="register-message" id="registerMessage" role="status" aria-live="polite"></p>
+
+        <p class="register-login">
+          Đã có tài khoản?
+          <a href="login.html">Đăng nhập ngay</a>
+        </p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER: dùng lại cấu trúc chung của Kireio -->
+<footer id="contact">
+  <div class="wrap">
+    <div class="f-top">
+      <div>
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="about.html">Về chúng tôi</a></li>
+          <li><a href="services.html">Dịch vụ</a></li>
+          <li><a href="blog.html">Bài viết</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Chính sách</h4>
+        <ul>
+          <li><a href="privacy.html">Chính sách bảo mật</a></li>
+          <li><a href="terms.html">Điều khoản sử dụng</a></li>
+          <li><a href="refund.html">Chính sách hoàn tiền</a></li>
+          <li><a href="cookie.html">Chính sách cookie</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Liên hệ</h4>
+        <ul>
+          <li><a href="mailto:support@kireio.vn">support@kireio.vn</a></li>
+          <li><a href="tel:+84123456789">+84 123 456 789</a></li>
+          <li><a href="#">Facebook / Zalo</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="f-bot">
+      <p>Kireio HQ, [Địa chỉ của bạn], TP. Hồ Chí Minh, Việt Nam.</p>
+      <p>© <span id="year">2026</span> Kireio. All rights reserved.</p>
+    </div>
+    <div class="brand-big" aria-hidden="true">Kireio</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="register.js"></script>
+</body>
+</html>

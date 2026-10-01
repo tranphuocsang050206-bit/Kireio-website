@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kireio - Nền tảng kết nối dịch vụ vệ sinh thông minh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+ <div class="wrap bar">
+  <a href="#home" class="logo" aria-label="Kireio">
+   <!-- Thay bằng logo thật -->
+   <img src="D:\Kireio\images\logo.jpg" alt="Logo Kireio" style="height: 48px; width: auto; object-fit: contain;">Kireio
+  </a>
+  <button class="burger" id="burger" aria-label="Mở menu" aria-expanded="false">☰</button>
+  <nav id="nav" aria-label="Menu chính">
+   <ul>
+    <li><a href="index.html" class="active">Trang chủ</a></li>
+    <li><a href="about.html">Về chúng tôi</a></li>
+    <li><a href="services.html">Dịch vụ</a></li>
+    <li><a href="blog.html">Bài viết</a></li>
+    <li><a href="explore.html">Tìm việc</a></li>
+   </ul>
+  </nav>
+  <a href="contact.html" class="btn">Liên hệ chúng tôi</a>
+ </div>
+</header>
+
+<main>
+<!-- Cấu hình CSS thông minh cho ảnh Banner -->
+<style>
+    /* 1. Mặc định cho màn hình nhỏ (Điện thoại, chia đôi màn hình) */
+    .hero-img-smart {
+        width: 100%;
+        max-width: 500px; /* Giữ kích thước gọn gàng để không bị lấn chữ */
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    /* 2. Chỉ phóng to khi màn hình rộng (Mở Full màn hình máy tính > 992px) */
+    @media (min-width: 992px) {
+        .hero-img-smart {
+            transform: scale(1.3); /* Phóng to 130% */
+            transform-origin: right center;
+        }
+    }
+</style>
+
+<!-- BANNER -->
+<div class="hero" id="home">
+ <div class="wrap">
+  <div>
+   <h1 class="reveal">Chào mừng đến với Kireio</h1>
+   <p class="reveal d1">Kireio kết nối bạn với đội ngũ vệ sinh chuyên nghiệp, giúp nhà ở và văn phòng luôn sạch sẽ, khỏe mạnh và dễ chịu để bạn tập trung vào việc quan trọng.</p>
+   <a href="register.html" class="btn reveal d2">Đăng kí ngay</a>
+  </div>
+  
+  <!-- Chèn ảnh và gọi class hero-img-smart vừa tạo ở trên -->
+  <img src="D:\Kireio\images\banner.png" alt="Kireio Banner" class="hero-img reveal d2 hero-img-smart">
+  
+ </div>
+ <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0 40C240 100 480 0 760 30S1200 90 1440 30V80H0Z" fill="#fbf8ef"/></svg>
+</div>
+ <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0 40C240 100 480 0 760 30S1200 90 1440 30V80H0Z" fill="#fbf8ef"/></svg>
+</div>
+
+<!-- TẦM NHÌN / NHIỆM VỤ / GIÁ TRỊ -->
+<section class="vmv" id="about">
+ <div class="wrap">
+  <div class="grid3">
+   <div class="card reveal"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></div>
+    <h3>Tầm nhìn</h3><p>Trở thành nền tảng dịch vụ vệ sinh thông minh được tin cậy nhất, nổi bật về chất lượng, sự đáng tin cậy và tính bền vững.</p></div>
+   <div class="card reveal d1"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg></div>
+    <h3>Nhiệm vụ</h3><p>Mang đến dịch vụ vệ sinh xuất sắc, đáp ứng đúng nhu cầu riêng của từng khách hàng bằng sự tận tâm và chính trực.</p></div>
+   <div class="card reveal d2"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11Z"/></svg></div>
+    <h3>Giá trị mang lại</h3><p>Chúng tôi coi trọng sự trung thực, chất lượng, tinh thần đồng đội và sự hài lòng của khách hàng trong mọi việc.</p></div>
+  </div>
+</section>
+
+<!-- DỊCH VỤ -->
+<section class="services" id="services">
+ <div class="wrap">
+  <h2 class="reveal">Dịch vụ của chúng tôi</h2>
+  <div class="grid4">
+   <a href="#" class="svc reveal"><img src="D:\Kireio\images\timkiemnhancong.jpg" alt="Tìm kiếm nhân công" style="width: 100%; height: 180px; object-fit: cover; border-radius: 12px; margin-bottom: 12px;"><span>Tìm kiếm nhân công</span></a>
+   <a href="#" class="svc reveal d1"><img src="D:\Kireio\images\timkiemvieclam.jpg" alt="Tìm kiếm việc làm" style="width: 100%; height: 180px; object-fit: cover; border-radius: 12px; margin-bottom: 12px;"><span>Tìm kiếm việc làm</span></a>
+   <a href="#" class="svc reveal d2"><img src="D:\Kireio\images\cungcapnhanluc.jpg" alt="Cung cấp nhân lực" style="width: 100%; height: 180px; object-fit: cover; border-radius: 12px; margin-bottom: 12px;"><span>Cung cấp nhân lực</span></a>
+   <a href="#" class="svc reveal d3"><img src="D:\Kireio\images\vesinhtongquan.jpg" alt="Vệ sinh tổng quan" style="width: 100%; height: 180px; object-fit: cover; border-radius: 12px; margin-bottom: 12px;"><span>Vệ sinh tổng quan</span></a>
+  </div>
+  <div class="cta reveal"><a href="register.html" class="btn light">Đăng kí ngay</a></div>
+ </div>
+ <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" style="bottom:auto;top:auto;bottom:-1px">
+  <path d="M0 40C240 100 480 0 760 30S1200 90 1440 30V80H0Z" fill="#fbf8ef" transform="translate(0,0)"/>
+</svg>
+</section>
+
+<!-- LÝ DO CHỌN KIREIO -->
+<section class="why" id="why">
+ <div class="wrap">
+  <h2 class="reveal">Vì sao nên chọn Kireio?</h2>
+  <div class="why-grid">
+   <div class="card reveal"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-5 4-7 8-7s8 2 8 7"/></svg></div><h3>Giải pháp cá nhân hóa</h3><p>Kế hoạch vệ sinh được thiết kế theo đúng nhu cầu và sở thích của bạn.</p></div>
+   <div class="card reveal d1"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6Z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Nhân viên được kiểm duyệt</h3><p>Đội ngũ được đào tạo bài bản, xác minh lý lịch và cam kết chất lượng.</p></div>
+   <div class="card reveal d2"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div><h3>Lịch hẹn linh hoạt</h3><p>Chúng tôi sắp xếp theo lịch của bạn để bạn luôn thoải mái, yên tâm.</p></div>
+   <div class="card reveal"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Đúng giờ, đáng tin cậy</h3><p>Chúng tôi tôn trọng thời gian của bạn và luôn đến đúng hẹn.</p></div>
+   <div class="card reveal d1"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11v9H3v-9zM7 11l4-8c2 0 3 1 3 3l-1 4h6a2 2 0 0 1 2 2l-1.5 6A2 2 0 0 1 17.5 20H7"/></svg></div><h3>Cam kết hài lòng 100%</h3><p>Nếu chưa hài lòng, chúng tôi sẽ làm lại cho đến khi bạn ưng ý.</p></div>
+  </div>
+ </div>
+</section>
+<div id="blog"></div>
+</main>
+
+<!-- FOOTER -->
+<footer id="contact">
+ <div class="wrap">
+  <div class="f-top">
+   <div><h4>Menu</h4><ul>
+    <li><a href="index.html">Trang chủ</a></li><li><a href="about.html">Về chúng tôi</a></li><li><a href="services.html">Dịch vụ</a></li><li><a href="blog.html">Bài viết</a></li></ul></div>
+   <div><h4>Chính sách</h4>
+        <ul>
+          <li><a href="privacy.html">Chính sách bảo mật</a></li>
+          <li><a href="terms.html">Điều khoản sử dụng</a></li>
+          <li><a href="refund.html">Chính sách hoàn tiền</a></li>
+          <li><a href="cookie.html">Chính sách cookie</a></li>
+        </ul></div>
+   <div><h4>Liên hệ</h4><ul>
+    <li><a href="mailto:support@kireio.vn">support@kireio.vn</a></li><li><a href="tel:+84123456789">+84 123 456 789</a></li><li><a href="#">Facebook / Zalo</a></li></ul></div>
+  </div>
+  <div class="f-bot">
+   <p>Kireio HQ, [Địa chỉ của bạn], TP. Hồ Chí Minh, Việt Nam.</p>
+   <p>© <span id="year">2026</span> Kireio. All rights reserved.</p>
+  </div>
+  <div class="brand-big" aria-hidden="true">Kireio</div>
+ </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Kiểm tra xem trình duyệt có lưu tài khoản kireio_user không
+    const loggedInUser = localStorage.getItem('kireio_user');
+    
+    if (loggedInUser) {
+        const user = JSON.parse(loggedInUser);
+        
+        // Tìm nút "Liên hệ chúng tôi" hoặc "Đăng nhập" trên Header
+        // (Bạn cần điều chỉnh class hoặc ID cho đúng với HTML của bạn)
+        const headerBtn = document.querySelector('header .btn'); 
+        
+        if (headerBtn) {
+            // Thay đổi nút thành Tên người dùng / Doanh nghiệp
+            headerBtn.textContent = `Xin chào, ${user.name}`;
+            headerBtn.href = 'explore.html'; // Hoặc trỏ về trang Dashboard (Profile) của họ sau này
+            headerBtn.style.backgroundColor = '#456726'; // Đổi màu xíu cho khác biệt
+            
+            // Thêm một nút Đăng xuất nhỏ bên cạnh
+            const logoutBtn = document.createElement('a');
+            logoutBtn.textContent = "Đăng xuất";
+            logoutBtn.href = "#";
+            logoutBtn.className = "btn"; // Thêm class nút của bạn
+            logoutBtn.style.marginLeft = "10px";
+            logoutBtn.style.backgroundColor = "#c0553d"; // Màu đỏ
+            
+            logoutBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                localStorage.removeItem('kireio_user'); // Xóa data
+                window.location.reload(); // Tải lại trang chủ
+            });
+            
+            headerBtn.parentNode.insertBefore(logoutBtn, headerBtn.nextSibling);
+        }
+    }
+});
+</script>
+</body>
+</html>

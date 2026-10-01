@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dịch vụ - Kireio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Dùng chung nền tảng giao diện với 2 trang trước -->
+<link rel="stylesheet" href="style.css">
+<!-- Riêng cho nội dung trang Dịch vụ -->
+<link rel="stylesheet" href="services.css">
+</head>
+<body>
+
+<!-- HEADER (giống hệt trang chủ / Về chúng tôi) -->
+<header>
+ <div class="wrap bar">
+  <a href="index.html" class="logo" aria-label="Kireio">
+   <img src="D:\Kireio\images\logo.jpg" alt="Logo Kireio" style="height: 48px; width: auto; object-fit: contain;">Kireio
+  </a>
+  <button class="burger" id="burger" aria-label="Mở menu" aria-expanded="false">☰</button>
+  <nav id="nav" aria-label="Menu chính">
+   <ul>
+<li><a href="index.html" class="active">Trang chủ</a></li>
+    <li><a href="about.html">Về chúng tôi</a></li>
+    <li><a href="services.html">Dịch vụ</a></li>
+    <li><a href="blog.html">Bài viết</a></li>
+    <li><a href="explore.html">Tìm việc</a></li>
+   </ul>
+  </nav>
+  <a href="contact.html" class="btn">Liên hệ chúng tôi</a>
+ </div>
+</header>
+
+<main>
+
+<!-- 1. HERO -->
+<section class="svc-hero">
+ <div class="wrap svc-hero-grid">
+  <div class="svc-hero-text reveal">
+   <span class="eyebrow">Nền tảng Kireio</span>
+   <h1>Giải pháp kết nối nhân sự vệ sinh toàn diện</h1>
+   <p>
+    Kireio giúp doanh nghiệp dọn dẹp tìm kiếm cộng tác viên phù hợp chỉ trong vài phút,
+    đồng thời mang đến nguồn công việc ổn định, minh bạch cho người lao động part-time
+    và sinh viên trên khắp cả nước.
+   </p>
+   <div class="svc-hero-cta">
+    <a href="register.html" class="svc-btn">Tìm nhân sự ngay</a>
+    <a href="register.html" class="svc-btn outline">Đăng ký nhận việc</a>
+   </div>
+  </div>
+  <!-- Thay bằng illustration/ảnh minh họa thật -->
+<img src="D:\Kireio\images\ketnoinhansu.jpg" alt="Mạng lưới kết nối nhân sự Kireio" class="svc-hero-illus reveal d1" style="width: 100%; height: auto; object-fit: cover; border-radius: 24px; box-shadow: 0 15px 30px rgba(0,0,0,0.1);">
+ </div>
+</section>
+
+<!-- 2. DUAL SOLUTIONS -->
+<section class="svc-dual">
+ <div class="wrap">
+  <div class="svc-section-head reveal">
+   <span class="eyebrow">Giải pháp phù hợp cho mọi đối tượng</span>
+   <h2>Một nền tảng, hai lợi ích song hành</h2>
+  </div>
+
+  <div class="svc-dual-grid">
+   <!-- Doanh nghiệp -->
+   <article class="svc-card reveal">
+    <div class="svc-card-icon">
+     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M6 21V7l6-4 6 4v14M9 21v-6h6v6M9 10h.01M9 13h.01M15 10h.01M15 13h.01"/></svg>
+    </div>
+    <h3>Dành cho Doanh nghiệp</h3>
+    <p>Kết nối nhanh với đội ngũ cộng tác viên đã được xác thực, giảm tải khâu tuyển dụng và quản lý nhân sự vệ sinh.</p>
+    <ul class="svc-list">
+     <li>Tối ưu chi phí vận hành nhân sự</li>
+     <li>Hồ sơ cộng tác viên được xác thực &amp; đánh giá</li>
+     <li>Quản lý lịch làm việc tập trung, minh bạch</li>
+     <li>Hỗ trợ đối soát và chăm sóc 24/7</li>
+    </ul>
+    <a href="explore.html" class="svc-card-link">Tìm nhân sự ngay →</a>
+   </article>
+
+   <!-- Cộng tác viên -->
+   <article class="svc-card reveal d1">
+    <div class="svc-card-icon">
+     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-5 4-7 8-7s8 2 8 7"/></svg>
+    </div>
+    <h3>Dành cho Cộng tác viên</h3>
+    <p>Chủ động thời gian, tăng thu nhập với công việc vệ sinh linh hoạt phù hợp với lịch học, lịch làm của bạn.</p>
+    <ul class="svc-list">
+     <li>Giờ làm linh hoạt, chủ động sắp xếp</li>
+     <li>Thu nhập minh bạch, thanh toán đúng hạn</li>
+     <li>Nhận việc gần khu vực sinh sống</li>
+     <li>Được hỗ trợ đào tạo kỹ năng miễn phí</li>
+    </ul>
+    <a href="explore.html" class="svc-card-link">Đăng ký nhận việc →</a>
+   </article>
+  </div>
+ </div>
+</section>
+
+<!-- 3. HOW IT WORKS -->
+<section class="svc-steps">
+ <div class="wrap">
+  <div class="svc-section-head reveal">
+   <span class="eyebrow">Quy trình hoạt động</span>
+   <h2>Chỉ 4 bước đơn giản</h2>
+  </div>
+
+  <div class="svc-steps-row">
+   <div class="svc-steps-line" aria-hidden="true"><span class="svc-steps-line-fill"></span></div>
+
+   <div class="svc-step reveal">
+    <div class="svc-step-dot">
+     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3h6a1 1 0 0 1 1 1v1H8V4a1 1 0 0 1 1-1Z"/><rect x="5" y="5" width="14" height="16" rx="2"/><path d="M9 12h6M9 16h4"/></svg>
+    </div>
+    <span class="step-no">Bước 01</span>
+    <h4>Đăng yêu cầu</h4>
+    <p>Mô tả công việc, thời gian và khu vực cần hỗ trợ vệ sinh.</p>
+   </div>
+
+   <div class="svc-step reveal d1">
+    <div class="svc-step-dot">
+     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="12" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="M8.6 10.6 15.4 7.4M8.6 13.4l6.8 3.2"/></svg>
+    </div>
+    <span class="step-no">Bước 02</span>
+    <h4>Hệ thống ghép nối</h4>
+    <p>Kireio tự động ghép nối với cộng tác viên phù hợp gần nhất.</p>
+   </div>
+
+   <div class="svc-step reveal d2">
+    <div class="svc-step-dot">
+     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18"/></svg>
+    </div>
+    <span class="step-no">Bước 03</span>
+    <h4>Nhận việc</h4>
+    <p>Cộng tác viên xác nhận và thực hiện công việc đúng lịch hẹn.</p>
+   </div>
+
+   <div class="svc-step reveal d3">
+    <div class="svc-step-dot">
+     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3 2.6 5.9L21 9.6l-4.6 4.2L17.6 21 12 17.6 6.4 21l1.2-7.2L3 9.6l6.4-.7Z"/></svg>
+    </div>
+    <span class="step-no">Bước 04</span>
+    <h4>Đánh giá</h4>
+    <p>Hai bên đánh giá lẫn nhau, xây dựng uy tín trên nền tảng.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- 4. STATS -->
+<section class="svc-stats">
+ <!-- Sóng chuyển màu ở mép trên, tái sử dụng class .wave có sẵn ở style.css -->
+ <svg class="wave" style="top:-1px;bottom:auto" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+  <path d="M0 40C240 100 480 0 760 30S1200 90 1440 30V0H0Z" fill="#fbf8ef"/>
+ </svg>
+
+ <div class="wrap svc-stats-grid">
+  <div class="svc-stat reveal">
+   <span class="svc-stat-num" data-count="50" data-suffix="+">0</span>
+   <span class="svc-stat-label">Doanh nghiệp</span>
+  </div>
+  <div class="svc-stat reveal d1">
+   <span class="svc-stat-num" data-count="2000" data-suffix="+">0</span>
+   <span class="svc-stat-label">Cộng tác viên</span>
+  </div>
+  <div class="svc-stat reveal d2">
+   <span class="svc-stat-num" data-count="10000" data-suffix="+">0</span>
+   <span class="svc-stat-label">Giờ làm</span>
+  </div>
+ </div>
+</section>
+
+</main>
+
+<!-- FOOTER (giống hệt trang chủ / Về chúng tôi) -->
+<footer id="contact">
+ <div class="wrap">
+  <div class="f-top">
+   <div><h4>Menu</h4><ul>
+    <li><a href="index.html">Trang chủ</a></li><li><a href="about.html">Về chúng tôi</a></li><li><a href="services.html">Dịch vụ</a></li><li><a href="blog.html">Bài viết</a></li></ul></div>
+   <div><h4>Chính sách</h4>
+        <ul>
+          <li><a href="privacy.html">Chính sách bảo mật</a></li>
+          <li><a href="terms.html">Điều khoản sử dụng</a></li>
+          <li><a href="refund.html">Chính sách hoàn tiền</a></li>
+          <li><a href="cookie.html">Chính sách cookie</a></li>
+        </ul></div>
+   <div><h4>Liên hệ</h4><ul>
+    <li><a href="mailto:support@kireio.vn">support@kireio.vn</a></li><li><a href="tel:+84123456789">+84 123 456 789</a></li><li><a href="#">Facebook / Zalo</a></li></ul></div>
+  </div>
+  <div class="f-bot">
+   <p>Kireio HQ, [Địa chỉ của bạn], TP. Hồ Chí Minh, Việt Nam.</p>
+   <p>© <span id="year">2026</span> Kireio. All rights reserved.</p>
+  </div>
+  <div class="brand-big" aria-hidden="true">Kireio</div>
+ </div>
+</footer>
+
+<!-- Dùng chung script.js (menu, active nav, reveal, đếm số) -->
+<script src="script.js"></script>
+<!-- Riêng cho trang Dịch vụ (đường nối quy trình, đếm số có dấu phẩy) -->
+<script src="services.js"></script>
+</body>
+</html>
