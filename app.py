@@ -6,7 +6,7 @@ app = Flask(__name__)
 CORS(app) 
 
 # Thay đường link URI của bạn vào đây
-DB_URI = 'postgresql://postgres.uegjxwtzfyuiqtyfcfeq:S1a2n3g4%40Kireio@aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres?sslmode=require?sslmode=require'
+DB_URI = 'postgresql://postgres.uegjxwtzfyuiqtyfcfeq:S1a2n3g4%40Kireio@aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres?sslmode=require'
 
 # ==========================================
 # 1. API ĐĂNG KÝ
