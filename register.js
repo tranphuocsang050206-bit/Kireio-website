@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             try {
                 // Gửi dữ liệu qua Backend Python (Nhớ chạy file app.py)
-                const response = await fetch('http://127.0.0.1:5000/api/register', {
+                const response = await fetch('/api/register', {
                     method: 'POST',
                     body: formData
                 });
